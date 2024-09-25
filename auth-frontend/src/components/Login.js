@@ -11,7 +11,7 @@ const Login = () => {
         e.preventDefault();
         try {
             const response = await axios.post(
-                "http://localhost:5000/api/auth/login",
+                "https://login-auth-f8vb.onrender.com",
                 { username, password }
             );
             alert("Login successful!");
