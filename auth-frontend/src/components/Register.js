@@ -11,7 +11,7 @@ const Register = () => {
         e.preventDefault();
         try {
             const response = await axios.post(
-                "https://login-auth-f8vb.onrender.com",
+                "https://login-auth-f8vb.onrender.com/api/auth/register",
                 { username, password }
             );
             alert(response.data.message + "\n" + "Now Login Please");
